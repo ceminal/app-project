@@ -7,11 +7,11 @@ function ProductItem(props) {
   return (
     <div className="product-item">
       <div className="product-image">
-        <img src={props.product.image} alt="image" />
+        <img src={props.product.img} alt="image" />
       </div>
       <div className="product-info">
         <strong className="product-title">{props.product.title}</strong>
-        <span className="product-price">{props.product.price}</span>
+        <span className="product-price">{props.product.price}₺</span>
       </div>
     </div>
   );
