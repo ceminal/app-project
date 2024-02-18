@@ -1,0 +1,17 @@
+.danger {
+  background-color: red !important;
+  color: white !important;
+}
+
+.success {
+  background-color: green !important;
+  color: white !important;
+}
+
+button {
+  font-size: 14px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 4px;
+}

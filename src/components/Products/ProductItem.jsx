@@ -1,17 +1,23 @@
-import React from "react";
-import "./ProductItem.css";
 import PropTypes from "prop-types";
+import "./ProductItem.css";
+import Button from "../UI/Button";
 
 function ProductItem(props) {
-  console.log(props.product);
+  function handleClick() {
+    console.log("tıklandı!");
+  }
+
   return (
     <div className="product-item">
       <div className="product-image">
-        <img src={props.product.img} alt="image" />
+        <img src={props.productImage} alt="image" />
       </div>
       <div className="product-info">
-        <strong className="product-title">{props.product.title}</strong>
-        <span className="product-price">{props.product.price}₺</span>
+        <strong className="product-title">{props.productTitle}</strong>
+        <span className="product-price">{props.productPrice}₺</span>
+        <Button onClick={handleClick} iconName={"basket"} success>
+          Sepete Ekle
+        </Button>
       </div>
     </div>
   );
